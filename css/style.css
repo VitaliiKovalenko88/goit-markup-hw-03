@@ -43,8 +43,10 @@ button {
   margin: 0px;
   padding: 0px;
 }
+
 .link {
   text-decoration: none;
+  margin: 0px;
 }
 
 /* End утилиты */
@@ -57,7 +59,6 @@ button {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.38;
-  /* outline: 2px dashed #f44336; */
 }
 
 .studio-logo:focus {
@@ -85,10 +86,26 @@ button {
 
 .header {
   background-color: var(--primary-white-color);
+
+  outline: 2px dashed #f44336;
+}
+
+/* <<<<<<<<<<<<<<< NAV >>>>>>>>>>>>> */
+
+.nav {
+  display: flex;
 }
 
 .site-nav {
-  display: inline-block;
+  display: flex;
+}
+
+.site-nav-item {
+  background-color: yellowgreen;
+}
+
+.site-nav .list + .site-nav-item {
+  margin-left: 50px;
 }
 
 .nav-link {
@@ -113,14 +130,26 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+/* <<<<<<<<<<<<<<< END NAV >>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<< CONTACTS >>>>>>>>>>>> */
+
+.contacts {
+  display: flex;
+}
 
 .header-contacts {
-  color: var(--primary-text-color);
+  display: flex;
 
-  font-weight: 500;
+  color: var(--primary-text-color);
+  font-weight: var(--medium-font-weight);
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+}
+
+.header-contacts .list + .list {
+  margin-left: 50px;
 }
 
 .header-contacts:hover,
@@ -137,12 +166,14 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-bottom: 94px;
+  margin-top: 0px;
 
   background-color: var(--primary-background-color);
 }
 
 .hero-title {
-  margin: auto;
+  margin: 0px;
   margin-bottom: 30px;
   padding-left: 251px;
   padding-right: 251px;
@@ -158,6 +189,7 @@ button {
 }
 
 .hero-button {
+  margin: 0px;
   margin-bottom: 200px;
   padding: 10px 32px;
   border-radius: 4px;
@@ -169,7 +201,6 @@ button {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  /* font-style: normal; */
 }
 
 .hero-button:hover,
@@ -181,21 +212,27 @@ button {
 
 /* <<<<<<<< FEATURES >>>>>>>> */
 
-.features {
-  background-color: rgb(124, 185, 149);
-}
-
 .features-items {
   display: flex;
-  justify-content: space-between;
-  margin-top: 94px;
+  margin-top: 0px;
   margin-bottom: 94px;
-  background-color: burlywood;
+  padding-left: 0px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-item {
+  display: flex;
+  flex-direction: column;
+  align-self: b;
 }
 
 .features-title {
-  margin-top: 0px;
   color: var(--secondary-text-color);
+  margin: 0px;
+  margin-bottom: 10px;
 
   font-size: 14px;
   line-height: 1.17;
@@ -203,9 +240,10 @@ button {
 }
 
 .features-text {
+  margin: 0px;
   font-size: 14px;
-  line-height: 1.17;
-  font-weight: 400;
+  line-height: 1.71;
+  font-weight: var(--regular-font-weight);
 }
 
 /* <<<<<<<< ABOUT US >>>>>>>> */
