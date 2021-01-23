@@ -7,6 +7,7 @@
   --secondary-background-color: #f5f4fa;
   --black-color: #000000;
   --secondary-accent-color: #188ce8;
+  --border-line-color: #ececec;
   --bold-font-weight: 700;
   --regular-font-weight: 400;
   --medium-font-weight: 500;
@@ -98,7 +99,7 @@ img {
 /* <<<<<<<< HEADER >>>>>>>> */
 
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-line-color);
   background-color: var(--primary-white-color);
 }
 
@@ -128,7 +129,7 @@ img {
 .nav-link {
   color: var(--secondary-text-color);
 
-  font-weight: 500;
+  font-weight: var(--medium-font-weight);
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
