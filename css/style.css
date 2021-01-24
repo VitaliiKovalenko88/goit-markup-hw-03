@@ -151,8 +151,9 @@ img {
 
 .header-contacts {
   display: flex;
-  justify-content: space-evenly;
-  align-content: flex-end;
+  margin-left: auto;
+  padding: 0px;
+
   color: var(--primary-text-color);
   font-weight: var(--medium-font-weight);
   font-size: 14px;
@@ -163,13 +164,6 @@ img {
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-color);
-}
-
-.header-contacts {
-  align-content: flex-end;
-  margin-left: auto;
-
-  padding: 0px;
 }
 
 /* <<<<<<<<END HEADER >>>>>>>> */
@@ -291,6 +285,11 @@ img {
   padding-bottom: 94px;
 }
 
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-title {
   margin-bottom: 50px;
 
@@ -302,16 +301,18 @@ img {
 
 .team-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
+
 .team-item {
-  padding-bottom: 30px;
   min-width: 270px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-image {
@@ -354,8 +355,13 @@ img {
   color: var(--primary-white-color);
 }
 
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .address {
-  margin-bottom: 9px;
+  font-style: normal;
 }
 
 .address-name {
@@ -363,18 +369,12 @@ img {
   font-weight: var(--regular-font-weight);
   font-size: 14px;
   line-height: 1.7;
-  font-style: normal;
 }
 
-.address-name:hover,
-.address-name:focus {
-  color: var(--accent-color);
-}
-
-.footer-contact {
+.link-contact {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
-  font-weight: 400;
+  font-weight: var(--regular-font-weight);
   line-height: 1.71;
   letter-spacing: var(--letter-spacing);
 }
@@ -383,8 +383,8 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-contact:hover,
-.footer-contact:focus {
+.footer-contact .link:hover,
+.footer-contact .link:focus {
   color: var(--accent-color);
 }
 
@@ -400,13 +400,7 @@ img {
 .filters-items {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
-  min-width: 611px;
-}
-
-.filters-item {
-  padding-bottom: 16px;
-  margin: 0px;
+  margin-bottom: 50px;
 }
 
 .filters-item:not(:last-child) {
@@ -468,11 +462,10 @@ img {
   display: inline-block;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 20px;
 }
 .text-item {
   min-width: 322px;
-  padding: 0px 24px 20px;
+  padding: 20px 24px 20px;
 }
 
 .portfolio-name-title {
