@@ -355,13 +355,10 @@ img {
   color: var(--primary-white-color);
 }
 
-.footer-section {
-  display: flex;
-  flex-direction: column;
-}
-
 .address {
+  display: flex;
   font-style: normal;
+  flex-direction: column;
 }
 
 .address-name {
@@ -379,12 +376,12 @@ img {
   letter-spacing: var(--letter-spacing);
 }
 
-.footer-contact:not(:last-child) {
+.address .link:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-contact .link:hover,
-.footer-contact .link:focus {
+.address .link:hover,
+.address .link:focus {
   color: var(--accent-color);
 }
 
