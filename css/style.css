@@ -286,8 +286,7 @@ img {
 }
 
 .team-content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 10px;
 }
 
 .team-title {
@@ -306,6 +305,7 @@ img {
 .team-item {
   min-width: 270px;
   background: #ffffff;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -315,12 +315,9 @@ img {
   margin-right: 30px;
 }
 
-.team-image {
-  margin-bottom: 30px;
-}
-
 .team-name {
   margin-bottom: 10px;
+
   color: var(--secondary-text-color);
   font-weight: var(--medium-font-weight);
   font-size: 16px;
@@ -460,9 +457,9 @@ img {
   margin: 0px;
   padding: 0px;
 }
-.text-item {
+.text-content {
   min-width: 322px;
-  padding: 20px 24px 20px;
+  padding: 20px 24px;
 }
 
 .portfolio-name-title {
